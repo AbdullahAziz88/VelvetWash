@@ -12,15 +12,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div>
-          <p className="text-sm font-medium text-foam mb-3">Quick links</p>
-          <ul className="space-y-2 text-sm">
-            <li><NavLink to="/services" className="hover:text-foam">Services</NavLink></li>
-            <li><NavLink to="/pricing" className="hover:text-foam">Pricing</NavLink></li>
-            <li><NavLink to="/booking" className="hover:text-foam">Book a wash</NavLink></li>
-            <li><NavLink to="/faq" className="hover:text-foam">FAQ</NavLink></li>
-          </ul>
-        </div>
+        
 
         <div>
           <p className="text-sm font-medium text-foam mb-3">Visit us</p>
