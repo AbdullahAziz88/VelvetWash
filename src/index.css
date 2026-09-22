@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "sans-serif";
+  --font-body: "Inter", sans-serif;
+
+  --color-ink: #10262b;
+  --color-ink-soft: #17343b;
+  --color-foam: #f3faf9;
+  --color-foam-dim: #e6f1f0;
+  --color-hose: #1b7a8c;
+  --color-hose-deep: #145f6d;
+  --color-chrome: #c9d6d9;
+  --color-wax: #e8a33d;
+  --color-wax-deep: #c9822a;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-foam);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.wash-swipe {
+  position: relative;
+  overflow: hidden;
+}
+.wash-swipe::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 64px;
+  background: inherit;
+  clip-path: polygon(0 100%, 100% 40%, 100% 100%);
+  pointer-events: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-wax);
+  outline-offset: 2px;
+}
+
